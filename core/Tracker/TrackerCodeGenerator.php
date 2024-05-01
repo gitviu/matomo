@@ -293,16 +293,22 @@ class TrackerCodeGenerator
             }
 
             $referrerParsed = parse_url($site_url);
-
-            if (!isset($firstHost) && isset($referrerParsed['host'])) {
-                $firstHost = $referrerParsed['host'];
-            }
+            $referrerParsedHost = null;
 
             if (isset($referrerParsed['host'])) {
-                $url = $referrerParsed['host'];
-            } else {
-                $url = '';
+                $referrerParsedHost = $referrerParsed['host'];
             }
+
+            if (strpos($referrerParsedHost, 'www.') === 0) {
+                $referrerParsedHost = substr($referrerParsedHost, 4);
+            }
+
+            if (!isset($firstHost) && isset($referrerParsedHost)) {
+                $firstHost = $referrerParsedHost;
+            }
+
+            $url = isset($referrerParsedHost) ? $referrerParsedHost : '';
+
             if (!empty($referrerParsed['path'])) {
                 $url .= $referrerParsed['path'];
             }
