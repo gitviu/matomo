@@ -1,0 +1,32 @@
+<div class="widgetBody getCurrentLocalTime" style="padding-bottom:10px;">
+  <div>
+    {{ 'CoreHome_Currentlocaltime'|translate }}:
+    <span id="local-time"></span>
+  </div>
+  <div id="site-time-container" style="display: none">
+    {{ 'CoreHome_Currentwebsitelocaltime'|translate }}:
+    <span id="site-time"></span>
+  </div>
+</div>
+<script type="text/javascript">
+  // Function to update the clocks
+  function showCurrentLocalTime(){
+    const now = new Date();
+    const options = {
+      hour: '2-digit', 
+      minute: '2-digit',
+      hour12: {{ currentTimeFormat }}
+    };
+    document.getElementById('local-time').innerText = now.toLocaleTimeString('en-US', options);
+    
+    options.timeZone = '{{ websiteTimezone }}';
+    document.getElementById('site-time').innerText = now.toLocaleTimeString('en-US', options);
+  }
+
+  showCurrentLocalTime()
+  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  if(timeZone !== '{{websiteTimezone}}'){
+    document.getElementById('site-time-container').style.display = "";
+  }
+  setInterval(showCurrentLocalTime, 60000);
+</script>

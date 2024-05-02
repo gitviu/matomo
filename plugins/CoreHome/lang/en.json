@@ -40,7 +40,7 @@
         "InjectedHostNonSuperUserWarning": "%1$sClick here to access Matomo safely%2$s and remove this warning. You may also want to contact your Matomo administrator and notify them about this issue (%3$sclick here to email%4$s).",
         "InjectedHostSuperUserWarning": "Matomo may be misconfigured (for example, if Matomo was recently moved to a new server or URL). You can either %1$sclick here and add %2$s as the valid Matomo hostname (if you trust it)%3$s, or %4$sclick here and go to %5$s to access Matomo safely%6$s.",
         "InjectedHostWarningIntro": "You are now accessing Matomo from %1$s, but Matomo has been configured to run at this address: %2$s.",
-        "JavascriptDisabled": "JavaScript must be enabled in order for you to use Matomo in standard view.<br \/>However, it seems JavaScript is either disabled or not supported by your browser.<br \/>To use standard view, enable JavaScript by changing your browser options, then %1$stry again%2$s.<br \/>",
+        "JavascriptDisabled": "JavaScript must be enabled in order for you to use Matomo in standard view.<br />However, it seems JavaScript is either disabled or not supported by your browser.<br />To use standard view, enable JavaScript by changing your browser options, then %1$stry again%2$s.<br />",
         "VisitStatusOrdered": "Ordered",
         "VisitStatusOrderedThenAbandoned": "Ordered then Abandoned Cart",
         "VisitTypeReturning": "Returning",
@@ -55,7 +55,7 @@
         "ReportGeneratedOn": "Report generated on %s",
         "ReportGeneratedXAgo": "Report generated %s ago",
         "SharePiwikLong": "Hi! I just found a great piece of free software: Matomo!\n\nMatomo will let you track visitors to your website for free. You should definitely check it out!",
-        "SharePiwikShort": "Matomo! Free\/libre web analytics. Own your data.",
+        "SharePiwikShort": "Matomo! Free/libre web analytics. Own your data.",
         "ShareThis": "Share this",
         "ShortcutsAvailable": "Available shortcuts",
         "ShortcutZenMode": "for Zen mode",
@@ -106,8 +106,8 @@
         "RowLimit": "Row limit",
         "CustomLimit": "Custom limit",
         "ExportFormat": "Export format",
-        "ExportTooltip": "Note: To use the generated export URL, you will need to specify an app token auth. You can configure these tokens in Admin → Security → Token Auths.",
-        "ExportTooltipWithLink": "Note: To use the generated export URL, you will need to specify an app token auth. You can configure these tokens in %1$s[Admin → Security → Auths Tokens]%2$s. Replace %3$s in the Export URL by your Auth token. Warning: Never share the URL with the real token with anyone else.",
+        "ExportTooltip": "Note: To use the generated export URL, you will need to specify an app token auth. You can configure these tokens in Admin \u2192 Security \u2192 Token Auths.",
+        "ExportTooltipWithLink": "Note: To use the generated export URL, you will need to specify an app token auth. You can configure these tokens in %1$s[Admin \u2192 Security \u2192 Auths Tokens]%2$s. Replace %3$s in the Export URL by your Auth token. Warning: Never share the URL with the real token with anyone else.",
         "ExpandSubtables": "Expand subtables",
         "StandardReport": "Standard report",
         "FlattenReport": "Flatten report",
@@ -118,7 +118,7 @@
         "Profilable": "Profilable",
         "SearchOnMatomo": "Search '%1$s' on Matomo.org",
         "TechDeprecationWarning": "Starting in version Matomo %1$s, Matomo will be ending support for %2$s. For more information %3$ssee our blog post.%4$s",
-        "ReportingCategoryHelpPrefix": "How does the \"%1$s → %2$s\" reporting page help me?",
+        "ReportingCategoryHelpPrefix": "How does the \"%1$s \u2192 %2$s\" reporting page help me?",
         "VisitorsCategoryHelp1": "The Visitors pages tell you things about who your visitors are. Things like where your visitors came from, what devices and browsers they're using and when they generally visit your website. Understand, in the aggregate, who your audience is, and look for outliers to see how your audience could grow.",
         "VisitorsCategoryHelp2": "In addition to general information about your visitors, you can also use the %1$sVisits Log%2$s to see what occurred in every individual visit.",
         "VisitorsOverviewHelp": "The Visitors Overview helps you understand the popularity of your site. It does this by providing charts that show how many visits your site is receiving over a selected period and the average level of engagement for key features, such as searches and downloads.",
@@ -128,6 +128,9 @@
         "EngagementSubcategoryHelp2": "This can help you to optimise for frequency and high-interaction visits in addition to maximising your reach.",
         "PeriodHasOnlyRawData": "It looks like reports for this period have not been processed yet. Do you want to see what's happening now? Check out the %1$sVisits log%2$s or choose a different date period until the reports are generated.",
         "StartDate": "Start Date",
-        "EndDate": "End Date"
+        "EndDate": "End Date",
+        "AboutMatomo": "About Matomo",
+        "Currentlocaltime": "Curent local time",
+        "Currentwebsitelocaltime": "Current local time in website's timezone"
     }
 }

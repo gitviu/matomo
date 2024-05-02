@@ -33,6 +33,8 @@
         "UnFlattenDataTable": "Acest raport este uniform %s Faceti-l ierarhic",
         "ViewAllPiwikVideoTutorials": "Vizualizeaza toate Tutorialele Video ale Matomo",
         "WebAnalyticsReports": "Rapoarte de analitică web",
-        "YouAreUsingTheLatestVersion": "Foloseşti ultima versiune Matomo!"
+        "YouAreUsingTheLatestVersion": "Foloseşti ultima versiune Matomo!",
+        "Currentlocaltime": "Ora curentă local",
+        "Currentwebsitelocaltime": "Ora curentă a website-ului"
     }
 }
